@@ -1,0 +1,7 @@
+.game-over {
+    display: none;
+}
+
+.game-over.show {
+    display: block;
+}

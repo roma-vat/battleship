@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import ShipSummaryContainer from '../containers/ShipSummaryContainer';
 import BoardContainer from '../containers/BoardContainer';
+import GameOverContainer from '../containers/GameOverContainer';
+import ShipSummaryContainer from '../containers/ShipSummaryContainer';
 
 class App extends Component {
     render() {
@@ -8,6 +9,7 @@ class App extends Component {
             <div>
                 <ShipSummaryContainer />
                 <BoardContainer />
+                <GameOverContainer />
             </div>
         );
     }
