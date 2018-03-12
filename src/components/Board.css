@@ -1,5 +1,7 @@
 .board {
     display: table;
+    border: orange 5px solid;
+    border-collapse: collapse;
 }
 
 .board-row {
@@ -8,15 +10,17 @@
 
 .board-cell {
     display: table-cell;
-    width: 20pt;
-    height: 20pt;
-    background-color: gray;
+    border: gray 1px solid;
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-size: 105%;
 }
 
 .board-cell.shoot {
-    background-color: red;
+    background-image: url('../assets/miss.png');
 }
 
 .board-cell.shoot.hit {
-    background-color: green;
+    background-image: url('../assets/hit.png');
 }

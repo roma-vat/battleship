@@ -8,7 +8,7 @@ class GameOver extends Component {
                 <div className="game-over-label">
                     You finished the game in {this.props.clicks} clicks.
                 </div>
-                <input type="button" value="Try again" onClick={this.props.onStartNewClick} />
+                <input className="game-over-button" type="button" value="Try again" onClick={this.props.onStartNewClick} />
             </div>
         );
     }

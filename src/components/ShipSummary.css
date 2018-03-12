@@ -10,12 +10,45 @@
     display: table-cell;
 }
 
+.shippic {
+    width: 100px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.shippic.carrier {
+    background-image: url(../assets/aircraft_shape.png);
+}
+
+.shippic.battleship {
+    background-image: url(../assets/battleship_shape.png);
+}
+
+.shippic.cruiser {
+    background-image: url(../assets/cruiser_shape.png);
+}
+
+.shippic.submarine {
+    background-image: url(../assets/submarine_shape.png);
+}
+
+.shippic.destroyer {
+    background-image: url(../assets/carrier_shape.png);
+}
+
+.shiplive {
+    vertical-align: middle;
+}
+
 .livescore {
-    width: 20pt;
-    height: 20pt;
-    background-color: grey;
+    width: 20px;
+    height: 20px;
+    background-image: url(../assets/miss_small.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .livescore.shooted {
-    background-color: red;
+    background-image: url(../assets/hit_small.png);
 }

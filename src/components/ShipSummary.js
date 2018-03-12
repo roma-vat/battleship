@@ -21,8 +21,7 @@ class ShipSummary extends Component {
         }
         return (
             <div className="ship-row" key={shipId}>
-                <div className={"shippic-" + ship.ship}>
-                    {ship.ship}
+                <div className={"shippic " + ship.ship}>
                 </div>
                 <div className="ship-live">
                     {liveScores}
