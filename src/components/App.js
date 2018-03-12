@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { Component } from 'react';
+import BoardContainer from '../containers/BoardContainer';
 
-const App = () => (
-    <div>
-    </div>
-);
+class App extends Component {
+    render() {
+        return (
+            <div>
+                <BoardContainer />
+            </div>
+        );
+    }
+}
 
 export default App;
