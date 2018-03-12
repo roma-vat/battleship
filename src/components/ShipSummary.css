@@ -1,0 +1,21 @@
+.ship-summary {
+    display: table;
+}
+
+.ship-row {
+    display: table-row;
+}
+
+.ship-row div {
+    display: table-cell;
+}
+
+.livescore {
+    width: 20pt;
+    height: 20pt;
+    background-color: grey;
+}
+
+.livescore.shooted {
+    background-color: red;
+}
