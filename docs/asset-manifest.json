@@ -1,6 +1,6 @@
 {
-  "main.css": "battleship/docs/static/css/main.2ac4bacf.css",
-  "main.css.map": "battleship/docs/static/css/main.2ac4bacf.css.map",
-  "main.js": "battleship/docs/static/js/main.1c36d029.js",
-  "main.js.map": "battleship/docs/static/js/main.1c36d029.js.map"
+  "main.css": "battleship/static/css/main.2ac4bacf.css",
+  "main.css.map": "battleship/static/css/main.2ac4bacf.css.map",
+  "main.js": "battleship/static/js/main.1c36d029.js",
+  "main.js.map": "battleship/static/js/main.1c36d029.js.map"
 }
