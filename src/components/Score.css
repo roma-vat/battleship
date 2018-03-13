@@ -1,0 +1,27 @@
+.score-main {
+    display: table;
+    text-align: center;
+}
+
+.player-score {
+    display: table-cell;
+    background-color: greenyellow;
+    padding: 10px;
+}
+
+.player-score.me {
+    background-color: orange;
+}
+
+.score-value {
+    border-bottom: 1px gray solid;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.score-playername {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px 5px;
+}
