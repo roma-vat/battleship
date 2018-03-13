@@ -35,15 +35,11 @@ for (let shipId = 0; shipId < layoutData.layout.length; shipId++) {
     }
 }
 
-const defaultShipSummary = [];
-for (let ship of layoutData.layout) {
-    let shipSummary = {
-        ship: ship.ship,
-        allCells: layoutData.shipTypes[ship.ship].size,
-        shootedCells: 0
-    };
-    defaultShipSummary.push(shipSummary);
-}
+const defaultShipSummary = layoutData.layout.map(ship => ({
+    ship: ship.ship,
+    size: layoutData.shipTypes[ship.ship].size,
+    shootedCells: 0
+}));
 
 const defaultBattleship = {
     board: defaultBoardLayout,
@@ -86,7 +82,7 @@ const battleship = (state = defaultBattleship, action) => {
                     return { ...ship, shootedCells };
                 });
                 let gameOver = shipSummary.every(ship =>
-                    ship.shootedCells === ship.allCells
+                    ship.shootedCells === ship.size
                 );
                 state = { ...state, shipSummary, gameOver };
             }

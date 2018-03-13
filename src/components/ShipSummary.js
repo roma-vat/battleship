@@ -11,14 +11,15 @@ class ShipSummary extends Component {
     }
 
     renderShip(ship, shipId) {
-        let liveScores = [];
-        for (let i = 0; i < ship.allCells; i++) {
+        let liveScores = new Array(ship.size).fill().map((_, i) => {
             let scoreClasses = ["livescore"];
             if (i < ship.shootedCells) {
                 scoreClasses.push("shooted");
             }
-            liveScores.push(<div className={scoreClasses.join(" ")} key={i} />);
-        }
+            return (
+                <div className={scoreClasses.join(" ")} key={i} />
+            );
+        });
         return (
             <div className="ship-row" key={shipId}>
                 <div className="ship-row-inner" >
