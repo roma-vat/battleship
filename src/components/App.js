@@ -3,15 +3,18 @@ import BoardContainer from '../containers/BoardContainer';
 import GameOverContainer from '../containers/GameOverContainer';
 import ScoreContainer from '../containers/ScoreContainer';
 import ShipSummaryContainer from '../containers/ShipSummaryContainer';
+import './App.css';
 
 class App extends Component {
     render() {
         return (
-            <div>
-                <ScoreContainer />
-                <ShipSummaryContainer />
-                <BoardContainer />
-                <GameOverContainer />
+            <div className="app-main">
+                <div className="app-main-inner">
+                    <ScoreContainer />
+                    <ShipSummaryContainer />
+                    <BoardContainer />
+                    <GameOverContainer />
+                </div>
             </div>
         );
     }

@@ -1,7 +1,18 @@
 .board {
     display: table;
-    border: orange 5px solid;
+    border: rgb(255, 176, 0) 5px solid;
     border-collapse: collapse;
+    width: 100%;
+    height: 100%;
+}
+
+.board-outer {
+    width: 66vw;
+    height: 66vw;
+    top: 0px;
+    right: 0px;
+    position: absolute;
+    padding: 10px;
 }
 
 .board-row {
@@ -10,11 +21,11 @@
 
 .board-cell {
     display: table-cell;
-    border: gray 1px solid;
-    width: 30px;
-    height: 30px;
+    border: rgb(164, 164, 164) 1px solid;
+    width: 10%;
+    height: 10%;
     background-position: center;
-    background-size: 105%;
+    background-size: 110%;
 }
 
 .board-cell.shoot {
@@ -23,4 +34,27 @@
 
 .board-cell.shoot.hit {
     background-image: url('../assets/hit.png');
+}
+
+@media(min-width: 1200px) {
+    .board-outer {
+        width: 800px;
+        height: 800px;
+    }
+}
+
+@media(max-width: 800px) {
+    .board-outer {
+        width: 100vw;
+        height: 100vw;
+        padding-top: 0px;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 570px) {
+    .board-outer {
+        margin-top: -15px;
+        padding: 0px;
+    }
 }

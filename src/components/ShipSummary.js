@@ -21,10 +21,12 @@ class ShipSummary extends Component {
         }
         return (
             <div className="ship-row" key={shipId}>
-                <div className={"shippic " + ship.ship}>
-                </div>
-                <div className="ship-live">
-                    {liveScores}
+                <div className="ship-row-inner" >
+                    <div className={"shippic " + ship.ship}>
+                    </div>
+                    <div className="ship-live">
+                        {liveScores}
+                    </div>
                 </div>
             </div>
         )

@@ -28,8 +28,10 @@ class Board extends Component {
 
     render() {
         return (
-            <div className="board">
-                {this.props.board.map((row, rowindex) => this.renderRow(row, rowindex))}
+            <div className="board-outer">
+                <div className="board">
+                    {this.props.board.map((row, rowindex) => this.renderRow(row, rowindex))}
+                </div>
             </div>
         );
     }
