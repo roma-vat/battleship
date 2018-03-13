@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import './ShipSummary.css';
 
+/**
+ * Ship Summary component.
+ * Shows list of all ships and how many cells are dead or alive.
+ */
 class ShipSummary extends Component {
     render() {
         return (
@@ -10,6 +14,11 @@ class ShipSummary extends Component {
         );
     }
 
+    /**
+     * Render specific ship.
+     * @param {object} ship - Ship state.
+     * @param {number} shipId - Index of ship in the state.
+     */
     renderShip(ship, shipId) {
         let liveScores = new Array(ship.size).fill().map((_, i) => {
             let scoreClasses = ["livescore"];

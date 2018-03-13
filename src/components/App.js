@@ -5,6 +5,9 @@ import ScoreContainer from '../containers/ScoreContainer';
 import ShipSummaryContainer from '../containers/ShipSummaryContainer';
 import './App.css';
 
+/**
+ * Main app component.
+ */
 class App extends Component {
     render() {
         return (

@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import './GameOver.css';
 
+/**
+ * Game Over component.
+ * Shows number of clicks which user made to 'hit' all ships.
+ */
 class GameOver extends Component {
     render() {
         return (

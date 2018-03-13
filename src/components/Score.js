@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import './Score.css';
 
+/**
+ * Score component.
+ * Shows how many clicks user made in current game.
+ */
 class Score extends Component {
     render() {
         let score = this.props.clicks.toString();

@@ -48,6 +48,11 @@ const defaultBattleship = {
     gameOver: false
 };
 
+/**
+ * Calculate new battleship state after applying action.
+ * @param {object} state - Current battleship state.
+ * @param {object} action - Action.
+ */
 const battleship = (state = defaultBattleship, action) => {
     switch (action.type) {
         case CLICK_CELL:
