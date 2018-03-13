@@ -3,11 +3,15 @@ import './Score.css';
 
 class Score extends Component {
     render() {
+        let score = this.props.clicks.toString();
+        while (score.length < 2) {
+            score = "0" + score;
+        }
         return (
             <div className="score-main">
                 <div className="player-score me">
                     <div className="score-value">
-                        {this.props.clicks.toString().padStart(2, 0)}
+                        {score}
                     </div>
                     <div className="score-playername">
                         player 1
